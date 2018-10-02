@@ -56,14 +56,11 @@ namespace ChartInteractivePoints
             // 
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
             xyDiagram1.AxisX.WholeRange.AutoSideMargins = true;
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.VisualRange.Auto = false;
-            xyDiagram1.AxisY.VisualRange.AutoSideMargins = true;
-            xyDiagram1.AxisY.VisualRange.MaxValueSerializable = "2.3";
-            xyDiagram1.AxisY.VisualRange.MinValueSerializable = "0";
+            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";            
             xyDiagram1.AxisY.WholeRange.Auto = false;
-            xyDiagram1.AxisY.WholeRange.AutoSideMargins = true;
-            xyDiagram1.AxisY.WholeRange.MaxValueSerializable = "2.3";
+            xyDiagram1.AxisY.WholeRange.AutoSideMargins = false;
+            xyDiagram1.AxisY.WholeRange.SideMarginsValue = 0;
+            xyDiagram1.AxisY.WholeRange.MaxValueSerializable = "2.5";
             xyDiagram1.AxisY.WholeRange.MinValueSerializable = "0";
             this.chartControl1.Diagram = xyDiagram1;
             this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
