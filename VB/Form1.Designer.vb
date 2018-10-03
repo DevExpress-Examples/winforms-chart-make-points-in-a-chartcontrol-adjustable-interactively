@@ -48,12 +48,9 @@
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1"
             xyDiagram1.AxisX.WholeRange.AutoSideMargins = True
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1"
-            xyDiagram1.AxisY.VisualRange.Auto = False
-            xyDiagram1.AxisY.VisualRange.AutoSideMargins = True
-            xyDiagram1.AxisY.VisualRange.MaxValueSerializable = "2.3"
-            xyDiagram1.AxisY.VisualRange.MinValueSerializable = "0"
             xyDiagram1.AxisY.WholeRange.Auto = False
-            xyDiagram1.AxisY.WholeRange.AutoSideMargins = True
+            xyDiagram1.AxisY.WholeRange.AutoSideMargins = False
+            xyDiagram1.AxisY.WholeRange.SideMarginsValue = 0
             xyDiagram1.AxisY.WholeRange.MaxValueSerializable = "2.3"
             xyDiagram1.AxisY.WholeRange.MinValueSerializable = "0"
             Me.chartControl1.Diagram = xyDiagram1

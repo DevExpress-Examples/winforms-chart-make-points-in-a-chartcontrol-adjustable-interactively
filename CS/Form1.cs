@@ -20,7 +20,8 @@ namespace ChartInteractivePoints {
                     ((XYDiagram)(sender as ChartControl).Diagram).PointToDiagram(e.HitInfo.HitPoint);
 
                 if(lastY != -1) {
-                    VisualRange range = ((XYDiagram)(sender as ChartControl).Diagram).AxisY.VisualRange;
+                    // Update AxisY.WholeRange if the point is too close to diagram bounds
+                    WholeRange range = ((XYDiagram)(sender as ChartControl).Diagram).AxisY.WholeRange;
                     double delta = ((double)range.MaxValue - (double)range.MinValue) / 8;
 
                     if(selectedPoint.Values[0] >= (double)range.MaxValue - delta)
