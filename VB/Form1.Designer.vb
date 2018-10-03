@@ -26,21 +26,21 @@
             Dim xyDiagram1 As New DevExpress.XtraCharts.XYDiagram()
             Dim series1 As New DevExpress.XtraCharts.Series()
             Dim pointSeriesLabel1 As New DevExpress.XtraCharts.PointSeriesLabel()
-            Dim seriesPoint1 As New DevExpress.XtraCharts.SeriesPoint("a", New Object() { (CObj(1R))})
-            Dim seriesPoint2 As New DevExpress.XtraCharts.SeriesPoint("b", New Object() { (CObj(2R))})
-            Dim seriesPoint3 As New DevExpress.XtraCharts.SeriesPoint("c", New Object() { (CObj(2R))})
-            Dim seriesPoint4 As New DevExpress.XtraCharts.SeriesPoint("d", New Object() { (CObj(1R))})
+            Dim seriesPoint1 As New DevExpress.XtraCharts.SeriesPoint("a", New Object() { (DirectCast(1R, Object))})
+            Dim seriesPoint2 As New DevExpress.XtraCharts.SeriesPoint("b", New Object() { (DirectCast(2R, Object))})
+            Dim seriesPoint3 As New DevExpress.XtraCharts.SeriesPoint("c", New Object() { (DirectCast(2R, Object))})
+            Dim seriesPoint4 As New DevExpress.XtraCharts.SeriesPoint("d", New Object() { (DirectCast(1R, Object))})
             Dim lineSeriesView1 As New DevExpress.XtraCharts.LineSeriesView()
             Dim pointSeriesLabel2 As New DevExpress.XtraCharts.PointSeriesLabel()
             Dim lineSeriesView2 As New DevExpress.XtraCharts.LineSeriesView()
             Me.chartControl1 = New DevExpress.XtraCharts.ChartControl()
-            CType(Me.chartControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(xyDiagram1, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(series1, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(pointSeriesLabel1, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(lineSeriesView1, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(pointSeriesLabel2, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(lineSeriesView2, System.ComponentModel.ISupportInitialize).BeginInit()
+            DirectCast(Me.chartControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            DirectCast(xyDiagram1, System.ComponentModel.ISupportInitialize).BeginInit()
+            DirectCast(series1, System.ComponentModel.ISupportInitialize).BeginInit()
+            DirectCast(pointSeriesLabel1, System.ComponentModel.ISupportInitialize).BeginInit()
+            DirectCast(lineSeriesView1, System.ComponentModel.ISupportInitialize).BeginInit()
+            DirectCast(pointSeriesLabel2, System.ComponentModel.ISupportInitialize).BeginInit()
+            DirectCast(lineSeriesView2, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' chartControl1
@@ -48,9 +48,12 @@
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1"
             xyDiagram1.AxisX.WholeRange.AutoSideMargins = True
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1"
+            xyDiagram1.AxisY.VisualRange.Auto = False
+            xyDiagram1.AxisY.VisualRange.AutoSideMargins = True
+            xyDiagram1.AxisY.VisualRange.MaxValueSerializable = "2.3"
+            xyDiagram1.AxisY.VisualRange.MinValueSerializable = "0"
             xyDiagram1.AxisY.WholeRange.Auto = False
-            xyDiagram1.AxisY.WholeRange.AutoSideMargins = False
-            xyDiagram1.AxisY.WholeRange.SideMarginsValue = 0
+            xyDiagram1.AxisY.WholeRange.AutoSideMargins = True
             xyDiagram1.AxisY.WholeRange.MaxValueSerializable = "2.3"
             xyDiagram1.AxisY.WholeRange.MinValueSerializable = "0"
             Me.chartControl1.Diagram = xyDiagram1
@@ -80,13 +83,13 @@
             Me.Controls.Add(Me.chartControl1)
             Me.Name = "Form1"
             Me.Text = "Form1"
-            CType(xyDiagram1, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(pointSeriesLabel1, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(lineSeriesView1, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(series1, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(pointSeriesLabel2, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(lineSeriesView2, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.chartControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            DirectCast(xyDiagram1, System.ComponentModel.ISupportInitialize).EndInit()
+            DirectCast(pointSeriesLabel1, System.ComponentModel.ISupportInitialize).EndInit()
+            DirectCast(lineSeriesView1, System.ComponentModel.ISupportInitialize).EndInit()
+            DirectCast(series1, System.ComponentModel.ISupportInitialize).EndInit()
+            DirectCast(pointSeriesLabel2, System.ComponentModel.ISupportInitialize).EndInit()
+            DirectCast(lineSeriesView2, System.ComponentModel.ISupportInitialize).EndInit()
+            DirectCast(Me.chartControl1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
 
         End Sub

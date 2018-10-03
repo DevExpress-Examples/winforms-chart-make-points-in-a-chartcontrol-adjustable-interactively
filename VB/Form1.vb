@@ -22,8 +22,7 @@ Namespace ChartInteractivePoints
                 Dim point As DiagramCoordinates = CType((TryCast(sender, ChartControl)).Diagram, XYDiagram).PointToDiagram(e.HitInfo.HitPoint)
 
                 If lastY <> -1 Then
-                    ' Update AxisY.WholeRange if the point is too close to diagram bounds
-                    Dim range As WholeRange = CType((TryCast(sender, ChartControl)).Diagram, XYDiagram).AxisY.WholeRange
+                    Dim range As VisualRange = CType((TryCast(sender, ChartControl)).Diagram, XYDiagram).AxisY.VisualRange
                     Dim delta As Double = (CDbl(range.MaxValue) - CDbl(range.MinValue)) / 8
 
                     If selectedPoint.Values(0) >= CDbl(range.MaxValue) - delta Then
