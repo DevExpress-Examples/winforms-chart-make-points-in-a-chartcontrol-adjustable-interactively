@@ -55,14 +55,10 @@ namespace ChartInteractivePoints
             // 
             // chartControl1
             // 
-            xyDiagram1.AxisX.Range.ScrollingRange.SideMarginsEnabled = true;
-            xyDiagram1.AxisX.Range.SideMarginsEnabled = true;
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.Range.Auto = false;
-            xyDiagram1.AxisY.Range.MaxValueSerializable = "2.3";
-            xyDiagram1.AxisY.Range.MinValueSerializable = "0";
-            xyDiagram1.AxisY.Range.ScrollingRange.SideMarginsEnabled = true;
-            xyDiagram1.AxisY.Range.SideMarginsEnabled = true;
+            xyDiagram1.AxisY.VisualRange.Auto = false;
+            xyDiagram1.AxisY.VisualRange.MaxValueSerializable = "2.3";
+            xyDiagram1.AxisY.VisualRange.MinValueSerializable = "0";
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
             this.chartControl1.Diagram = xyDiagram1;
             this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
