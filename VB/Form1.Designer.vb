@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace ChartInteractivePoints
+﻿Namespace ChartInteractivePoints
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
@@ -48,14 +46,10 @@ Namespace ChartInteractivePoints
 			' 
 			' chartControl1
 			' 
-			xyDiagram1.AxisX.Range.ScrollingRange.SideMarginsEnabled = True
-			xyDiagram1.AxisX.Range.SideMarginsEnabled = True
 			xyDiagram1.AxisX.VisibleInPanesSerializable = "-1"
-			xyDiagram1.AxisY.Range.Auto = False
-			xyDiagram1.AxisY.Range.MaxValueSerializable = "2.3"
-			xyDiagram1.AxisY.Range.MinValueSerializable = "0"
-			xyDiagram1.AxisY.Range.ScrollingRange.SideMarginsEnabled = True
-			xyDiagram1.AxisY.Range.SideMarginsEnabled = True
+			xyDiagram1.AxisY.VisualRange.Auto = False
+			xyDiagram1.AxisY.VisualRange.MaxValueSerializable = "2.3"
+			xyDiagram1.AxisY.VisualRange.MinValueSerializable = "0"
 			xyDiagram1.AxisY.VisibleInPanesSerializable = "-1"
 			Me.chartControl1.Diagram = xyDiagram1
 			Me.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -76,9 +70,12 @@ Namespace ChartInteractivePoints
 			Me.chartControl1.SeriesTemplate.View = lineSeriesView2
 			Me.chartControl1.Size = New System.Drawing.Size(466, 344)
 			Me.chartControl1.TabIndex = 0
-'			Me.chartControl1.MouseUp += New System.Windows.Forms.MouseEventHandler(Me.chartControl1_MouseUp);
-'			Me.chartControl1.MouseDown += New System.Windows.Forms.MouseEventHandler(Me.chartControl1_MouseDown);
-'			Me.chartControl1.ObjectHotTracked += New DevExpress.XtraCharts.HotTrackEventHandler(Me.chartControl1_ObjectHotTracked);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.chartControl1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chartControl1_MouseUp);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.chartControl1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chartControl1_MouseDown);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.chartControl1.ObjectHotTracked += new DevExpress.XtraCharts.HotTrackEventHandler(this.chartControl1_ObjectHotTracked);
 			' 
 			' Form1
 			' 

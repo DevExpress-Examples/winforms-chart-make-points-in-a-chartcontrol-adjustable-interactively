@@ -1,10 +1,10 @@
-Imports Microsoft.VisualBasic
-Imports System.Windows.Forms
+﻿Imports System.Windows.Forms
 Imports DevExpress.XtraCharts
 
 Namespace ChartInteractivePoints
 	Partial Public Class Form1
 		Inherits Form
+
 		Public Sub New()
 			InitializeComponent()
 		End Sub
@@ -19,10 +19,10 @@ Namespace ChartInteractivePoints
 			End If
 
 			If selectedPoint IsNot Nothing AndAlso isPressed Then
-				Dim point As DiagramCoordinates = (CType((TryCast(sender, ChartControl)).Diagram, XYDiagram)).PointToDiagram(e.HitInfo.HitPoint)
+				Dim point As DiagramCoordinates = CType((TryCast(sender, ChartControl)).Diagram, XYDiagram).PointToDiagram(e.HitInfo.HitPoint)
 
 				If lastY <> -1 Then
-					Dim range As AxisRange = (CType((TryCast(sender, ChartControl)).Diagram, XYDiagram)).AxisY.Range
+					Dim range As VisualRange = CType((TryCast(sender, ChartControl)).Diagram, XYDiagram).AxisY.VisualRange
 					Dim delta As Double = (CDbl(range.MaxValue) - CDbl(range.MinValue)) / 8
 
 					If selectedPoint.Values(0) >= CDbl(range.MaxValue) - delta Then
@@ -36,7 +36,7 @@ Namespace ChartInteractivePoints
 					End If
 				End If
 
-				CType(sender, ChartControl).RefreshData()
+				DirectCast(sender, ChartControl).RefreshData()
 				lastY = e.HitInfo.HitPoint.Y
 				Return
 			End If
