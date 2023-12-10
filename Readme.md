@@ -3,18 +3,18 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E294)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# Chart for WinForms - How to Make Points in a Chart Control Interactively Adjustable 
+
+This example demonstrates how to allow end-users to edit (move) series points data at runtime.
+
+Handle the [ChartControl.ObjectHotTracked](https://docs.devexpress.com/WindowsForms/DevExpress.XtraCharts.ChartControl.ObjectHotTracked) event and call [ChartControl.XYDiagram.PointToDiagram](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.XYDiagram2D.PointToDiagram(System.Drawing.Point)) method to convert physical coordinates of the mouse to logical.
+
+## Files to Review
 
 * [Form1.cs](./CS/Form1.cs) (VB: [Form1.vb](./VB/Form1.vb))
 * [Program.cs](./CS/Program.cs) (VB: [Program.vb](./VB/Program.vb))
-<!-- default file list end -->
-# How to make points in a ChartControl adjustable interactively
 
+## Documentation
 
-<p>This example demonstrates how to make it possible for end-users to edit (move) series points data at runtime.</p>
-<p>The key principals of this example include handling the ChartControl.ObjectHotTracked event and using the ChartControl.XYDiagram.PointToDiagram method to convert physical coordinates of the mouse to logical.<br /><br />We have created a separate topic to discuss series point interactivity capabilities required in ChartControl: <a href="https://www.devexpress.com/Support/Center/p/T186553">Introduce series point interactivity</a>.  Please post there your requirements and scenarios.</p>
-
-<br/>
-
-
+* [Basic End-User Interaction](https://docs.devexpress.com/WindowsForms/2951/controls-and-libraries/chart-control/end-user-features/basic-end-user-interaction)
