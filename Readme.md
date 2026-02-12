@@ -20,7 +20,7 @@ Handle the [ChartControl.ObjectHotTracked](https://docs.devexpress.com/WindowsFo
 
 * [Basic End-User Interaction](https://docs.devexpress.com/WindowsForms/2951/controls-and-libraries/chart-control/end-user-features/basic-end-user-interaction)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-chart-make-points-in-a-chartcontrol-adjustable-interactively&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-chart-make-points-in-a-chartcontrol-adjustable-interactively&~~~was_helpful=no)
 
